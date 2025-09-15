@@ -70,4 +70,16 @@ body {
   width: 3rem;
   height: 0.3rem;
   background-color: #ffffff;
+}
+
+@media (width < 576px) {
+  .nav__items {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */
