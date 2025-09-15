@@ -1,0 +1,55 @@
+.header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+
+  &__logo {
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+  }
+
+  &__list {
+    a {
+      text-decoration: none;
+      color: $links-color;
+    }
+  }
+
+  &__list a:hover {
+    color: $text-primary;
+  }
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      width: 3rem;
+      height: 0.3rem;
+      background-color: $text-primary;
+    }
+  }
+}

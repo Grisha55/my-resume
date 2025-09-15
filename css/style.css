@@ -14,4 +14,60 @@ body {
   font-size: 1.6rem;
   background-color: #0a0a0a;
   color: #ffffff;
+}
+
+.container {
+  padding: 1rem 1.5rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+.nav__logo {
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.nav__logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.nav__items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.nav__list a {
+  text-decoration: none;
+  color: #a6a8cd;
+}
+.nav__list a:hover {
+  color: #ffffff;
+}
+.nav__burger {
+  display: none;
+  cursor: pointer;
+}
+.nav__burger span {
+  display: inline-block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
