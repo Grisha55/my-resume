@@ -1,0 +1,14 @@
+@media (width < 576px) {
+  .nav {
+    &__items {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.7rem;
+    }
+  }
+}
