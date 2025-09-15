@@ -82,6 +82,10 @@ body {
     flex-direction: column;
     row-gap: 0.7rem;
   }
+  .about__text--bio {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
 }
 .about {
   display: flex;
