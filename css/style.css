@@ -18,7 +18,7 @@ body {
 
 .container {
   padding: 1rem 1.5rem;
-  max-width: 120rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -82,4 +82,34 @@ body {
     flex-direction: column;
     row-gap: 0.7rem;
   }
+}
+.about {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 1rem 1.5rem;
+}
+.about__title {
+  font-weight: 400;
+}
+.about__text--bio {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+.about__text--findme {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+.about__text--findme a {
+  color: #818cf8;
+  text-decoration: none;
+  padding: 0 1.5rem;
+}
+.about__checkbox {
+  font-size: 2rem;
+}
+.about__checkbox label {
+  padding: 0 1rem;
 }/*# sourceMappingURL=style.css.map */

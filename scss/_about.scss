@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 1rem 1.5rem;
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__text--bio {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  &__text--findme {
+    line-height: 3rem;
+    font-size: 2rem;
+
+    a {
+      color: $accent-secondary;
+      text-decoration: none;
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__checkbox {
+    font-size: 2rem;
+
+    label {
+      padding: 0 1rem;
+    }
+  }
+}
