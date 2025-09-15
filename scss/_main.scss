@@ -9,11 +9,11 @@ html {
 }
 
 body {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-normal;
   font-size: 1.6rem;
-  background-color: $color-dark;
-  color: $color-white;
+  background-color: $bg-primary;
+  color: $text-primary;
 }
 
 // a {
