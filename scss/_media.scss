@@ -11,4 +11,11 @@
       row-gap: 0.7rem;
     }
   }
+
+  .about {
+    &__text--bio {
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+  }
 }
