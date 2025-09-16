@@ -86,6 +86,9 @@ body {
     max-width: 50rem;
     margin: 0 auto;
   }
+  .tennis__image--block {
+    flex-wrap: wrap;
+  }
 }
 @media (width < 450px) {
   .computers__image--block {
