@@ -188,4 +188,40 @@ body {
 .tennis__image--block img {
   width: 37rem;
   height: 20rem;
+}
+
+.projects {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  row-gap: 3rem;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  margin-bottom: 8rem;
+}
+.projects__title {
+  font-weight: 400;
+}
+.projects__text {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.projects__list {
+  padding: 0 5rem;
+  line-height: 2;
+}
+.projects__item {
+  font-size: 2rem;
+}
+.projects__item a {
+  color: #818cf8;
+  text-decoration: none;
+}
+.projects__item a:hover {
+  background-color: #818cf8;
+  color: #ffffff;
+}
+.projects__item span {
+  display: inline-block;
+  padding: 0 1rem 0 1rem;
 }/*# sourceMappingURL=style.css.map */
