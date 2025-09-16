@@ -94,6 +94,7 @@ body {
   flex-direction: column;
   row-gap: 3rem;
   padding: 1rem 1.5rem;
+  margin-bottom: 8rem;
 }
 .about__title {
   font-weight: 400;
@@ -116,4 +117,37 @@ body {
 }
 .about__checkbox label {
   padding: 0 1rem;
+}
+
+.computers {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  flex-direction: column;
+  row-gap: 4rem;
+  padding: 1rem 1.5rem;
+}
+.computers__title {
+  font-weight: 400;
+  text-align: left;
+}
+.computers p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.computers p a {
+  text-decoration: none;
+  color: #818cf8;
+}
+.computers p a:hover {
+  background-color: #818cf8;
+  color: #ffffff;
+}
+.computers__image--block {
+  width: 40rem;
+  height: 38rem;
+}
+.computers__image--block img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
