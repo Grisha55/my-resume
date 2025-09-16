@@ -24,6 +24,11 @@
       color: $accent-secondary;
       text-decoration: none;
       padding: 0 1.5rem;
+
+      &:hover {
+        background-color: $accent-secondary;
+        color: $text-primary;
+      }
     }
   }
 

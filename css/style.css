@@ -121,6 +121,10 @@ body {
   text-decoration: none;
   padding: 0 1.5rem;
 }
+.about__text--findme a:hover {
+  background-color: #818cf8;
+  color: #ffffff;
+}
 .about__checkbox {
   font-size: 2rem;
 }
@@ -224,4 +228,24 @@ body {
 .projects__item span {
   display: inline-block;
   padding: 0 1rem 0 1rem;
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+}
+.footer__nav--links {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+.footer__link--about {
+  text-decoration: none;
+  color: #818cf8;
+  font-size: 1.8rem;
+}
+.footer__link--img {
+  width: 3rem;
+  height: 3rem;
 }/*# sourceMappingURL=style.css.map */
