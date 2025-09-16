@@ -19,3 +19,12 @@
     }
   }
 }
+
+@media (width < 450px) {
+  .computers {
+    &__image--block {
+      max-width: 30rem;
+      max-height: 28rem;
+    }
+  }
+}
