@@ -87,6 +87,12 @@ body {
     margin: 0 auto;
   }
 }
+@media (width < 450px) {
+  .computers__image--block {
+    max-width: 30rem;
+    max-height: 28rem;
+  }
+}
 .about {
   display: flex;
   align-items: start;
@@ -146,8 +152,12 @@ body {
 .computers__image--block {
   width: 40rem;
   height: 38rem;
+  transition: all 0.3s ease-in-out;
 }
 .computers__image--block img {
   width: 100%;
   height: 100%;
+}
+.computers__image--block:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
