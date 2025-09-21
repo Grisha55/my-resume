@@ -21,16 +21,16 @@
           </a>
           <ul class="nav__items">
             <li class="nav__list">
-              <a href="#" class="nav__link">Биография</a>
+              <a href="#about" class="nav__link">Обо мне</a>
             </li>
             <li class="nav__list">
-              <a href="#" class="nav__link">Теннис</a>
+              <a href="#computers" class="nav__link">Компьютеры</a>
             </li>
             <li class="nav__list">
-              <a href="#" class="nav__link">Другое</a>
+              <a href="#tennis" class="nav__link">Теннис</a>
             </li>
             <li class="nav__list">
-              <a href="#" class="nav__link">Проекты</a>
+              <a href="#projects" class="nav__link">Проекты</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +38,7 @@
     </header>
     <main>
       <div class="container">
-        <section class="about">
+        <section class="about" id="about">
           <h1 class="about__title">Обо мне</h1>
           <p class="about__text--bio">
             С десятилетия дисциплины на корте — к строке кода. С 3 лет я
@@ -58,7 +58,7 @@
             <label for="styled-checkbox">Сменить тему</label>
           </div>
         </section>
-        <section class="computers">
+        <section class="computers" id="computers">
           <h1 class="computers__title">Компьютеры!</h1>
           <p class="computers__text--maintime">
             Мой рабочий день преимущественно состоит из написания кода. Этот
@@ -66,8 +66,8 @@
             оптимальных решений и, конечно, отладки, которая порой занимает
             больше времени, чем предполагалось изначально.
             <br />
-            Вы можете <a href="#">[Ознакомиться с моими работами]</a>, если вам
-            интересно.
+            Вы можете <a href="#projects">[Ознакомиться с моими работами]</a>,
+            если вам интересно.
           </p>
           <p class="computers__text--stack">
             В качестве основных инструментов я использую JavaScript и React, к
@@ -96,7 +96,7 @@
             <img src="/assets/images/computer.jpg" alt="computer" />
           </div>
         </section>
-        <section class="tennis">
+        <section class="tennis" id="tennis">
           <h1>Теннис!</h1>
           <p>
             С трёх лет моя жизнь превратилась в бесконечную погоню за мячиками.
@@ -118,28 +118,52 @@
             <img src="/assets/images/tennis2.png" alt="tennis2" />
           </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
           <h1 class="projects__title">Проекты!</h1>
           <p class="projects__text">
             Вот неполный и неупорядоченный список, над которыми я работал:
           </p>
           <ul class="projects__list">
             <li class="projects__item">
-              <a target="_blank" href="#">[EstablishmentsApp]</a>
+              <a
+                target="_blank"
+                href="https://github.com/Grisha55/EstablishmentsApp"
+                >[EstablishmentsApp]</a
+              >
               <span>:</span> Приложение для поиска ресторанов поблизости.
             </li>
             <li class="projects__item">
-              <a target="_blank" href="#">[IOSInterviewApplication]</a>
+              <a
+                target="_blank"
+                href="https://github.com/Grisha55/IOSInterviewApplication"
+                >[IOSInterviewApplication]</a
+              >
               <span>:</span> Приложение для помощи в подготовке к
               собеседованиям.
             </li>
             <li class="projects__item">
-              <a target="_blank" href="#">[VK_GeekBrains]</a>
+              <a
+                target="_blank"
+                href="https://github.com/Grisha55/VK_GeekBrains"
+                >[VK_GeekBrains]</a
+              >
               <span>:</span> Приложение, сполользующее API ВКонтакте, клонируя
               данные пользователя.
             </li>
             <li class="projects__item">
-              <a target="_blank" href="#">[SmartStuffApp]</a>
+              <a
+                target="_blank"
+                href="https://github.com/Grisha55/frontend-journey"
+                >[zen]</a
+              >
+              <span>:</span> Приложение для интернет-магазина.
+            </li>
+            <li class="projects__item">
+              <a
+                target="_blank"
+                href="https://github.com/Grisha55/SmartStuffApp"
+                >[SmartStuffApp]</a
+              >
               <span>:</span> Приложение для управления технических 'Умных' вещей
               (робот-пылесос, ночники).
             </li>
@@ -150,7 +174,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__nav--links">
-          <a href="#" class="footer__link--about"
+          <a href="#top" class="footer__link--about"
             >© 2025 Gregory custom resume</a
           >
           <a href="#" class="footer__link--about">Terms of Use</a>
