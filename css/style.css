@@ -73,6 +73,18 @@ body {
   height: 0.3rem;
 }
 
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+  .modal-close {
+    padding: 0.7rem 1.2rem;
+  }
+}
 @media (width < 640px) {
   .nav__items {
     display: none;
@@ -356,6 +368,91 @@ body {
 .footer__link--img {
   width: 3rem;
   height: 3rem;
+}
+.footer .modal-toggle {
+  display: none;
+}
+.footer .modal-trigger {
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer .modal-trigger:hover {
+  text-decoration: underline;
+}
+.footer .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.footer .modal-content {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  max-width: 60rem;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+.footer .modal-content h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+.footer .modal-content h3 {
+  color: #4ecdc4;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.footer .modal-content p {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 2rem;
+}
+.footer .modal-content br {
+  margin-bottom: 0.5rem;
+  display: block;
+  content: "";
+}
+.footer .modal-close {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(145deg, #ff6b6b, #4ecdc4);
+  color: white;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.footer .modal-close:hover {
+  background: linear-gradient(145deg, #ff5252, #3dbbb3);
+  transform: translateY(-2px);
+}
+.footer .modal-toggle:checked + .modal-overlay {
+  display: flex;
+  opacity: 1;
+}
+.footer .modal-toggle:checked + .modal-overlay .modal-content {
+  animation: modalSlideIn 0.4s ease-out;
+}
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-5rem) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
 }
 
 .alpha {
