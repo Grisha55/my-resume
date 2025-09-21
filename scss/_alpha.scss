@@ -1,0 +1,31 @@
+.alpha {
+  padding: 1rem 1.5rem;
+  margin-bottom: 6rem;
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    line-height: 2.9rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 40rem;
+    grid-gap: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  }
+}
