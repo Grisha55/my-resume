@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "RobotoMono", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .container {
@@ -56,10 +56,10 @@ body {
 }
 .nav__list a {
   text-decoration: none;
-  color: #a6a8cd;
+  color: #0066cc;
 }
 .nav__list a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 .nav__burger {
   display: none;
@@ -69,7 +69,7 @@ body {
   display: inline-block;
   width: 3rem;
   height: 0.3rem;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 @media (width < 576px) {
@@ -127,7 +127,7 @@ body {
 }
 .about__text--findme a:hover {
   background-color: #818cf8;
-  color: #ffffff;
+  color: #000000;
 }
 .about__checkbox label {
   line-height: 2.9rem;
@@ -162,7 +162,7 @@ body {
 }
 .computers p a:hover {
   background-color: #818cf8;
-  color: #ffffff;
+  color: #000000;
 }
 .computers__image--block {
   width: 40rem;
@@ -238,7 +238,7 @@ body {
 }
 .projects__item a:hover {
   background-color: #818cf8;
-  color: #ffffff;
+  color: #000000;
 }
 .projects__item span {
   display: inline-block;
