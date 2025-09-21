@@ -14,6 +14,11 @@
     color: $accent-secondary;
     line-height: 2.9rem;
     font-size: 1.8rem;
+
+    &:hover {
+      background-color: $accent-secondary;
+      color: $text-primary-white;
+    }
   }
 
   &__link--img {

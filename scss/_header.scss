@@ -37,7 +37,8 @@
   }
 
   &__list a:hover {
-    color: $text-primary;
+    background-color: $accent-secondary;
+    color: $text-primary-white;
   }
 
   &__burger {
@@ -48,7 +49,6 @@
       display: inline-block;
       width: 3rem;
       height: 0.3rem;
-      background-color: $text-primary;
     }
   }
 }
