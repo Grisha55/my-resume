@@ -230,6 +230,7 @@ body {
 .projects__list {
   padding: 0 5rem;
   line-height: 2;
+  margin-bottom: 2rem;
 }
 .projects__item {
   line-height: 2.9rem;
@@ -247,25 +248,51 @@ body {
   display: inline-block;
   padding: 0 1rem 0 1rem;
 }
+.projects__form-title {
+  font-size: 2.2rem;
+}
 .projects button {
-  background-color: #0066cc;
+  background: linear-gradient(145deg, #0066cc, #004499);
   color: #ffffff;
   padding: 1rem 2rem;
   border: none;
   border-radius: 1.2rem;
   cursor: pointer;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 0.4rem 0 #003366;
 }
 .projects button:hover {
-  background-color: #004499;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.6rem 0 #003366;
+}
+.projects button:active {
+  transform: translateY(0.1rem);
+  box-shadow: 0 0.2rem 0 #003366;
 }
 .projects .contact-form {
-  max-width: 600;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 .projects .contact-form__group {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 1.5rem;
+}
+.projects .contact-form__group::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(90deg, transparent, #0066cc, transparent);
+  transition: left 0.5s ease;
+}
+.projects .contact-form__group:focus-within::after {
+  left: 100%;
 }
 .projects .contact-form__group label {
   display: block;
@@ -279,6 +306,31 @@ body {
   border: 0.1rem solid #ddd;
   border-radius: 1.2rem;
   font-size: 1rem;
+}
+.projects .contact-form__group input::-moz-placeholder, .projects .contact-form__group textarea::-moz-placeholder {
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+.projects .contact-form__group input::placeholder,
+.projects .contact-form__group textarea::placeholder {
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+.projects .contact-form__group input:focus::-moz-placeholder, .projects .contact-form__group textarea:focus::-moz-placeholder {
+  transform: translateY(-2rem);
+  opacity: 0;
+  font-size: 0.8rem;
+}
+.projects .contact-form__group input:focus::placeholder,
+.projects .contact-form__group textarea:focus::placeholder {
+  transform: translateY(-2rem);
+  opacity: 0;
+  font-size: 0.8rem;
+}
+.projects .contact-form__group textarea {
+  resize: none;
+  overflow-y: auto;
 }
 
 .footer {
