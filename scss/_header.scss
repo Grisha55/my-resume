@@ -32,9 +32,10 @@
     height: 5rem;
     border-radius: 50%;
     cursor: pointer;
+    display: none;
 
-    &.hidden {
-      display: none;
+    &.active {
+      display: block;
     }
   }
 
@@ -46,6 +47,7 @@
     column-gap: 3rem;
 
     h2 {
+      display: none;
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
@@ -84,8 +86,9 @@
   height: 100%;
   background-color: #67686e63;
   z-index: 10;
+  display: none;
 
-  &.hidden {
-    display: none;
+  &.active {
+    display: block;
   }
 }
