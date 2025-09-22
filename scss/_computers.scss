@@ -22,11 +22,11 @@
       line-height: 2.9rem;
       font-size: 1.8rem;
       text-decoration: none;
-      color: $accent-secondary;
+      color: var(--link-color);
 
       &:hover {
-        background-color: $accent-secondary;
-        color: $text-primary-white;
+        background-color: var(--link-color);
+        color: var(--link-hover);
       }
     }
   }
