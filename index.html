@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
     <title>My Resume</title>
   </head>
   <body>
@@ -40,8 +39,16 @@
             <button class="nav__close">&#10006</button>
           </ul>
         </nav>
+        <div class="overlay"></div>
+        <div class="theme-switcher">
+          <button class="theme-switcher__btn" aria-label="Переключить тему" title="Сменить тему">
+            <span class="theme-switcher__icon" data-theme="light">☀️</span>
+            <span class="theme-switcher__icon" data-theme="dark">🌙</span>
+            <span class="theme-switcher__icon" data-theme="bright">⭐</span>
+          </button>
+          <div class="theme-switcher__tooltip">Текущая тема: Светлая</div>
+        </div>
       </div>
-      <div class="overlay"></div>
     </header>
     <main>
       <div class="container">
@@ -60,10 +67,6 @@
             Мои проекты здесь:
             <a target="_blank" href="https://github.com/Grisha55">[GitHub]</a>
           </p>
-          <div class="about__checkbox">
-            <input type="checkbox" id="styled-checkbox" />
-            <label for="styled-checkbox">Сменить тему</label>
-          </div>
         </section>
         <section class="computers" id="computers">
           <h1 class="computers__title">Компьютеры!</h1>
@@ -351,5 +354,7 @@
         </label>
       </div>
     </footer>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

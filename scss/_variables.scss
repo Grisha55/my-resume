@@ -1,15 +1,113 @@
-// Colors
-$bg-primary: #ffffff;
-$bg-secondary: #f8f8f8;
-$text-primary: #000000;
-$text-primary-white: #ffffff;
-$text-secondary: #666666;
-$text-accent: #0066cc;
-$accent-primary: #3b82f6;
-$accent-secondary: #818cf8;
-$links-color: #0066cc;
-$links-hover: #004499;
-$underline-color: #0066cc;
+// ===== СВЕТЛАЯ ТЕМА =====
+:root {
+  // Основные цвета
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-accent: #e9ecef;
+
+  // Текст
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-muted: #adb5bd;
+
+  // Акцентные цвета
+  --accent-blue: #007bff;
+  --accent-blue-hover: #0056b3;
+  --accent-green: #28a745;
+  --accent-red: #dc3545;
+  --accent-orange: #fd7e14;
+  --accent-purple: #6f42c1;
+
+  // Специфические элементы
+  --header-bg: #ffffff;
+  --header-border: #dee2e6;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-border: #e9ecef;
+  --link-color: #007bff;
+  --link-hover: #ffffff;
+  --button-primary: #ffffff;
+  --button-primary-hover: #0056b3;
+  --nav-link: #495057;
+  --nav-link-hover: #007bff;
+  --section-bg: #f8f9fa;
+  --border-color: #dee2e6;
+
+  // Логотип и бренд
+  --logo-bg: #ffffff;
+  --logo-border: #dee2e6;
+}
+
+// ===== ТЕМНАЯ ТЕМА =====
+[data-theme='dark'] {
+  --bg-primary: #1a1d21;
+  --bg-secondary: #2d3035;
+  --bg-accent: #3a3d42;
+
+  --text-primary: #ffffff;
+  --text-secondary: #b0b3b8;
+  --text-muted: #8a8d91;
+
+  --accent-blue: #4dabf7;
+  --accent-blue-hover: #339af0;
+  --accent-green: #69db7c;
+  --accent-red: #ff6b6b;
+  --accent-orange: #ffa94d;
+  --accent-purple: #9775fa;
+
+  --header-bg: #2d3035;
+  --header-border: #40444b;
+  --card-bg: #2d3035;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --card-border: #40444b;
+  --link-color: #4dabf7;
+  --link-hover: #ffffff;
+  --button-primary: #ffffff;
+  --button-primary-hover: #339af0;
+  --nav-link: #b0b3b8;
+  --nav-link-hover: #4dabf7;
+  --section-bg: #2d3035;
+  --border-color: #40444b;
+
+  --logo-bg: #2d3035;
+  --logo-border: #40444b;
+}
+
+// ===== ЯРКАЯ ТЕМА (НЕОНОВАЯ) =====
+[data-theme='bright'] {
+  --bg-primary: #0f0f23;
+  --bg-secondary: #1a1a2e;
+  --bg-accent: #16213e;
+
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0ff;
+  --text-muted: #a0a0cc;
+
+  // Супер яркие неоновые цвета
+  --accent-blue: #00f3ff;
+  --accent-blue-hover: #00c4ff;
+  --accent-green: #00ff88;
+  --accent-red: #ff2a6d;
+  --accent-orange: #ff8e00;
+  --accent-purple: #b967ff;
+
+  --header-bg: #1a1a2e;
+  --header-border: #00f3ff;
+  --card-bg: rgba(26, 26, 46, 0.9);
+  --card-shadow: rgba(0, 243, 255, 0.2);
+  --card-border: #00f3ff;
+  --link-color: #00f3ff;
+  --link-hover: #111;
+  --button-primary: #ffffff;
+  --button-primary-hover: #00c4ff;
+  --nav-link: #e0e0ff;
+  --nav-link-hover: #00f3ff;
+  --section-bg: #1a1a2e;
+  --border-color: #00f3ff;
+
+  --logo-bg: #1a1a2e;
+  --logo-border: #00f3ff;
+}
 
 // Fonts
 $font-family-primary: 'RobotoMono', -apple-system, BlinkMacSystemFont,

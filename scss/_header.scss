@@ -26,7 +26,7 @@
     top: 2rem;
     right: -7rem;
     font-size: 2rem;
-    background-color: $bg-primary;
+    background-color: var(--button-primary);
     border: none;
     width: 5rem;
     height: 5rem;
@@ -55,14 +55,13 @@
 
   &__list {
     a {
-      text-decoration: none;
-      color: $links-color;
+      color: var(--nav-link);
     }
   }
 
   &__list a:hover {
-    background-color: $accent-secondary;
-    color: $text-primary-white;
+    background-color: var(--link-color);
+    color: var(--link-hover);
   }
 
   &__burger {
@@ -70,7 +69,7 @@
     cursor: pointer;
 
     span {
-      background-color: $text-primary;
+      background-color: var(--text-primary);
       display: inline-block;
       width: 3rem;
       height: 0.3rem;
@@ -84,11 +83,137 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #67686e63;
+  background-color: black;
+  opacity: 0.5;
   z-index: 10;
   display: none;
 
   &.active {
     display: block;
+  }
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+
+  &__btn {
+    background: var(--accent-blue);
+    border: none;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--card-shadow);
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
+      background: var(--accent-blue-hover);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    transition: all 0.3s ease;
+
+    &[data-theme='light'] {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &[data-theme='dark'],
+    &[data-theme='bright'] {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      right: 1rem;
+      border: 0.5rem solid transparent;
+      border-bottom-color: var(--border-color);
+    }
+  }
+
+  &:hover &__tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-theme='dark'] {
+  .theme-switcher__icon {
+    &[data-theme='dark'] {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &[data-theme='light'],
+    &[data-theme='bright'] {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+
+  .theme-switcher__tooltip {
+    &::after {
+      content: '';
+    }
+  }
+}
+
+[data-theme='bright'] {
+  .theme-switcher__icon {
+    &[data-theme='bright'] {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &[data-theme='light'],
+    &[data-theme='dark'] {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+
+  .theme-switcher__tooltip {
+    &::after {
+      content: '';
+    }
+  }
+}
+
+[data-theme='light'] {
+  .theme-switcher__tooltip {
+    &::after {
+      content: '';
+    }
   }
 }

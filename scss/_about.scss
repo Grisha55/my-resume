@@ -23,24 +23,16 @@
     font-size: 1.8rem;
 
     a {
-      color: $accent-secondary;
+      color: var(--link-color);
       text-decoration: none;
       line-height: 2.9rem;
       font-size: 1.8rem;
       padding: 0 1.5rem;
 
       &:hover {
-        background-color: $accent-secondary;
-        color: $text-primary-white;
+        background-color: var(--link-color);
+        color: var(--link-hover);
       }
-    }
-  }
-
-  &__checkbox {
-    label {
-      line-height: 2.9rem;
-      font-size: 1.8rem;
-      padding: 0 1rem;
     }
   }
 }
