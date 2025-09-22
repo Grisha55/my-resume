@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
     <title>My Resume</title>
   </head>
   <body>
@@ -20,6 +21,7 @@
             <img src="assets/images/logo.jpg" alt="" />
           </a>
           <ul class="nav__items">
+            <h2>Меню</h2>
             <li class="nav__list">
               <a href="#about" class="nav__link">Обо мне</a>
             </li>
@@ -35,9 +37,11 @@
             <li class="nav__list">
               <a href="#projects" class="nav__link">Проекты</a>
             </li>
+            <button class="nav__close hidden">&#10006</button>
           </ul>
         </nav>
       </div>
+      <div class="overlay hidden"></div>
     </header>
     <main>
       <div class="container">
