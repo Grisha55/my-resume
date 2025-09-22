@@ -17,6 +17,34 @@
   .nav {
     &__items {
       display: none;
+      position: fixed;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      width: 30rem;
+      background-color: #f7f9fa;
+      padding: 2rem 1.6rem;
+      z-index: 11;
+      transform: translateX(-39rem);
+      opacity: 0;
+      transition: all 0.4s;
+      height: 100%;
+
+      &.active {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 0.8rem 1.6rem;
+      text-decoration: none;
+      font-size: 2rem;
+      color: $text-primary;
     }
 
     &__burger {
