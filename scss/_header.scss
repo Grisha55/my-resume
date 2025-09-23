@@ -13,6 +13,8 @@
     width: 7rem;
     height: 7rem;
     object-fit: contain;
+    pointer-events: none;
+    cursor: default;
 
     img {
       width: 100%;

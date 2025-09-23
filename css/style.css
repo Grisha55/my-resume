@@ -162,6 +162,8 @@ a::after {
   height: 7rem;
   -o-object-fit: contain;
      object-fit: contain;
+  pointer-events: none;
+  cursor: default;
 }
 .nav__logo img {
   width: 100%;
