@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 734px) {
   .nav {
     &__items {
       display: flex !important;
@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 733px) {
   .nav {
     justify-content: space-between;
 
